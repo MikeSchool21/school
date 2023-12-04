@@ -1,0 +1,91 @@
+<!-- 1 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 2 -->
+    <title>Maikol Rognoni</title>
+    <!-- auto refresh for better coding -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id = "content">
+        <!-- 3 e 4 -->
+        <span id = "title"><h1>Mirai Botnet</h1></span>
+
+        <p>
+            Mirai è un malware progettato per operare su dispositivi connessi a Internet, specialmente dispositivi IoT,
+            rendendoli parte di una botnet che può essere usata per attacchi informatici su larga scala.
+            La botnet creata da Mirai è stata scoperta nell’agosto del 2016 da MalwareMustDie, 
+            un’organizzazione nonprofit impegnata nella ricerca per la sicurezza informatica ed è stata utilizzata lo stesso anno in svariati attacchi DDoS. 
+            Il codice sorgente di Mirai è stato pubblicato su <a href="https://github.com" target="_blank" class = "links">github</a> in open source. Dalla sua pubblicazione, 
+            le tecniche utilizzate da Mirai sono state riprese e adattate in 
+            <!-- citazione - 6 -->
+            <cite>diversi malware</cite>
+        </p>
+
+        <br>
+        <img src="https://repository-images.githubusercontent.com/482516469/3a538fa4-4df0-44b5-995a-9837c53b124e" alt="github offline" id = "main_image" usemap="#mappa">
+        <map name="mappa">
+            <area shape="default" coords="0, 5 ,2 ,1" href="https://google.com" alt="google">
+            <area shape="default" coords="0, 5 ,2 ,1" href="https://amazon.com" alt="google">
+        </map>
+        <br>
+
+        <p>
+            Mirai è costituito da due componenti principali, il <a href="https://it.wikipedia.org/wiki/Virus_(informatica)" class = "links" target="_blank">virus</a> e il Command and Control (CnC).
+
+            Il virus sfrutta un dispositivo infetto per cercare continuamente <a href="https://it.wikipedia.org/wiki/Indirizzo_IP" target="_blank" rel="noopener noreferrer" class="links">Indirizzi IP</a> di altri dispositivi IoT da compromettere[4]. Tuttavia, Mirai possiede una lista di indirizzi IP da ignorare direttamente nel suo codice. Tra questi vi sono gli indirizzi riservati al Servizio Postale degli Stati Uniti, al <a href="https://it.wikipedia.org/wiki/Dipartimento_della_difesa_degli_Stati_Uniti_d%27America" target="_blank" class="links">dipartimento della difesa</a>, all’Internet Assigned Numbers Authority (IANA), alla Hewlett-Packard e alla General Electric[5].
+
+            Il processo di ricerca è sempre in esecuzione su ogni BOT infettato e usa il protocollo Telnet tentando di accedere in modo casuale ai vari indirizzi IP. Per effettuare il login, sfrutta un attacco a dizionario, ossia una tecnica di forza bruta che prevede di svolgere svariati tentativi con credenziali comuni tra i dispositivi IoT. Queste credenziali vengono recuperate da una collezione di 60 coppie di username e password di default memorizzate nel codice sorgente. Quando ottiene l’accesso ad un dispositivo lo infetta con il malware e comunica al Command and Control l’identità del nuovo BOT e le sue credenziali. I dispositivi infettati continuano a funzionare normalmente ma aumenta l’uso della banda.
+
+            Mirai è scritto principalmente in C ed è progettato per diverse architetture (x86, ARM, Sparc, PowerPC, Motorola) in modo da coprire il maggior numero di CPU utilizzate nei dispositivi IoT. L’immagine del malware è leggera e implementa diverse tecniche per passare inosservata e nascondere i suoi meccanismi interni. In particolare, dopo che il virus viene caricato nella memoria volatile del BOT si autoelimina dal disco dello stesso. In questo modo, il malware persiste sul dispositivo finché non viene riavviato. Tuttavia, al termine del reboot, se le credenziali di accesso non vengono velocemente modificate, il dispositivo verrà nuovamente scoperto e re-infettato. Inoltre, Mirai identifica eventuali malware concorrenti già attivi sul dispositivo e li rimuove. Per farlo sfrutta uno script che termina tutti i processi che utilizzano servizi come <a href="https://it.wikipedia.org/wiki/SSH_File_Transfer_Protocol" target="_self" class="links">SSH</a>, <a href="https://it.wikipedia.org/wiki/Telnet" class="links"> Telnet</a> e <a href="https://it.wikipedia.org/wiki/Hypertext_Transfer_Protocol" class="links">HTTP</a>.
+
+            Il Command and Control implementato da Mirai supporta una semplice interfaccia a riga di comando, che permette all’attaccante di specificare un vettore di attacco, ossia uno o più indirizzi IP vittima e la durata dell’attacco. Per quanto riguarda le funzioni di attacco, Mirai è capace di lanciare varie tipologie di attacchi DDoS. A livello applicazione può lanciare attacchi di tipo HTTP floods, mentre a livello di rete e trasporto è capace di lanciare attacchi di tipo GRE IP and GRE ETH floods, SYN and ACK floods, STOMP floods, DNS floods e UDP flood. Inoltre, il CnC è sempre in attesa che i BOT comunichino i nuovi dispositivi infettati e le loro credenziali, le quali vengono usate per copiare il codice del virus e ampliare la Botnet.
+        </p>
+        <iframe width="370" height="275" src="https://www.youtube.com/embed/D5UDUjgD2w0?si=ZMUrci3At34nsVAM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+        <br>
+
+        <form target="_blank" action="download.html">
+            <button id = "button" type="submit">download</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>mode</th>
+                    <th>2 mesi</th>
+                    <th>3 mesi</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>attacchi</td>
+                    <td>1000</td>
+                    <td>6000</td>
+                </tr>
+                <tr>
+                    <td>zombies</td>
+                    <td>1000000</td>
+                    <td>500000</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#128520; &#12929; &#9939; &#128520;</p>
+    </div>
+
+    <script>
+        function func (){
+            document.getElementById("button").style.fontSize = "50px";
+        }
+    </script>
+
+    <button type = "button" onclick="func()"> change font size </button>
+
+
+
+</body>
+</html>

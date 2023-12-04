@@ -1,0 +1,54 @@
+body{
+    color: whitesmoke;
+    background-color: #333;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: small;
+}
+
+.links{
+ color: red;   
+ 
+}
+
+#title {
+    color: red;
+}
+
+#main_image{
+    width: 100%;
+}
+
+#button {
+    background-color: red;
+    font-size: larger;
+    color: aliceblue;
+    padding: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#content {
+    background-color: black;
+    padding: 7%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 40%;
+    border-radius: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    color: #333;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
