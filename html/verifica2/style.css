@@ -1,0 +1,67 @@
+body{
+     background-image: url("https://www.01net.it/wp-content/uploads/sites/14/2018/02/19158_OVH-Presse-Datacentre-RBX1-0004.jpg");
+     background-size: cover;
+}
+ h1{
+     border: 2px solid black;
+     margin-top: 20px;
+     padding: 10px;
+     text-align: center;
+     color: black;
+}
+ .block {
+     text-align: center;
+     border: 5px dotted black;
+     background-color: #f2f2f2;
+     font-family: 'Libre Baskerville', serif;
+     padding: 10px;
+}
+ .block2 {
+     border: 1px dashed black;
+     background-image: url('https://images.homify.com/image/upload/c_scale,h_500,w_500/v1527692644/p/photo/image/2577047/azzurro_polvere_3.jpg');
+     font-style: italic;
+     text-align: center;
+     padding: 10px;
+}
+ table {
+     border-collapse: collapse;
+     width: 100%;
+     background-color: #f2f2f2;
+}
+ th, td {
+     text-align: left;
+     padding: 8px;
+}
+ th {
+     background-color: #4CAF50;
+     color: white;
+}
+ .ordered-list {
+     list-style-type: decimal;
+}
+ .unordered-list {
+     list-style-type: disc;
+}
+ .image {
+     position: relative;
+     width: 50%;
+     margin-left: 25% 
+}
+ .image img {
+     width: 100%;
+     height: auto;
+}
+ .left {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 50%;
+     height: 100%;
+}
+ .right {
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 50%;
+     height: 100%;
+}
